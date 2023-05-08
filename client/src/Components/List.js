@@ -1,6 +1,6 @@
 import React from 'react';
-import './CSS/page.css'
-import img from './Images/book.jpg'
+import '../CSS/page.css'
+import img from '../Images/book.jpg'
 function List({ books }) {
   return (
     <table className='table table-hover table-bordered table-striped form '>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
-import './CSS/books.css'
-import img from './Images/book.jpg'
+import '../CSS/books.css'
+import img from '../Images/book.jpg'
 import { useLocation } from 'react-router-dom'
 const Info = () => {
     const location=useLocation();

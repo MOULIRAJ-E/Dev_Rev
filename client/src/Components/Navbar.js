@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './CSS/books.css'
-import './CSS/default.css'
+import '../CSS/books.css'
+import '../CSS/default.css'
 const Navbar = () => {
   return (
     <div>
@@ -11,11 +11,11 @@ const Navbar = () => {
                     <h1><Link className='navbar-brand nav-h' to="/">LIBRARY MANGEMENT SYSTEM</Link></h1>
                     <div id="menu">
                         <ul>
-                            <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-                            <li><a href="#"  title="">Our Services</a></li>
-                            <li><a href="#"  title="">About Us</a></li>
-                            <li><a href="#"  title="">Careers</a></li>
-                            <li><a href="#"  title="">Contact Us</a></li>
+                            <li><Link className='navbar-brand nav-h' to="/">Home</Link></li>
+                            <li><Link className='navbar-brand nav-h' to="/book">Books Collection</Link></li>
+                            <li><Link className='navbar-brand nav-h' to="/about">About Us</Link></li>
+                            <li><Link className='navbar-brand nav-h' to="/member">MemberShip</Link></li>
+                            <li><Link className='navbar-brand nav-h' to="/contact">Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>

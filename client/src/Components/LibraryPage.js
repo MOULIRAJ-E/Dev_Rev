@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import BookList from "./BookList";
 import List from './List'
 import Samp from "./Samp";
-import './CSS/page.css'
+import '../CSS/page.css'
 import axios from "axios";
 function LibraryPage() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -112,9 +112,9 @@ function LibraryPage() {
           onChange={handleFilterChange}/>
       </div>:<p></p>
       }
-      <div className="">
+      <div className="container">
         <br/>
-        <Samp books={booksToDisplay}/>
+        <BookList books={booksToDisplay}/>
         <div>
         <div>
         {currentPage > 0 && <button onClick={() => setCurrentPage(currentPage - 1)}><i className="fa fa-chevron-left"></i></button>}
